@@ -15,7 +15,7 @@ let testbool:boolean
 testbool:false
 
 
-let testStringorNumber: string | number  //union yapısı
+let testStringorNumber: string | number  //union 
 
 
 
@@ -53,7 +53,7 @@ let user ={
 }
 
 user.username = "jane"
-// user.age = "eighteen"  // yazarsak hata verir ne tanımladıysan one göre çalış
+// user.age = "eighteen" 
 
 let userObject : {
     username:string
