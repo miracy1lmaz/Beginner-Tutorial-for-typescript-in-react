@@ -173,3 +173,38 @@ const client: Iuser = {
     age:32,
 }
 
+
+
+//!GENERICS
+interface IAuthor {
+    id:number,
+    username:string
+}
+
+interface ICategory{
+    id:number,
+    title:string
+}
+
+interface IPost {
+    id:number;
+    title:string;
+    desc:string;
+    extra:IAuthor[] | ICategory[];
+}
+
+
+
+interface IPostBetter<T> {
+    id:number;
+    title:string;
+    desc:string;
+    extra:T[]
+}
+
+const testMe :IPostBetter<String> = {
+    id:1,
+    title:"post title",
+    desc:"post desc",
+    extra: ["str1","str2"],
+}
