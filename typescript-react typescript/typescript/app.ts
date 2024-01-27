@@ -167,6 +167,9 @@ const emp:IEmployee = {
 }
 
 
+const client: Iuser = {
+    username:"tom",
+    email:"tom@",
+    age:32,
+}
 
-
-// GENERICS
