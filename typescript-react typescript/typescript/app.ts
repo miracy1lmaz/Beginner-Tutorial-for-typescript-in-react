@@ -120,3 +120,53 @@ type UserType = {
 let betterFunc = (user:UserType) =>{
     console.log(user.username);
 }
+
+type myFunc = (a:number, b:string) => void
+
+
+let write : myFunc = (num,str) =>{
+    console.log(num + "times" +str);
+}
+
+
+type UserType2 = {
+    username:string;
+    age:number;
+    phone?:string;
+    theme: "dark" |  "light"
+}
+
+const userWithTheme : UserType2 = {
+    username:"john",
+    age:43,
+    theme:"dark"
+    // theme:"blue"
+}
+
+
+//***/ INTERFACES
+
+// use not = 
+interface  Iuser {
+    username:string;
+    email:string;
+    age:number;
+}
+
+
+interface IEmployee extends Iuser {
+    employeeId:number
+}
+
+
+const emp:IEmployee = {
+    username:"tom",
+    email:"m@gmail.com",
+    age:43,
+    employeeId:1
+}
+
+
+
+
+// GENERICS
